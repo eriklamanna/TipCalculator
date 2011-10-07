@@ -12,8 +12,8 @@
 
 @interface TipCalculatorAppDelegate : NSObject <UIApplicationDelegate>
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) UIWindow *window;
 
-@property (nonatomic, retain) IBOutlet TipCalculatorViewController *viewController;
+@property (nonatomic, retain) TipCalculatorViewController *viewController;
 
 @end

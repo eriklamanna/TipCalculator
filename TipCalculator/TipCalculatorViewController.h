@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface TipCalculatorViewController : UIViewController
+{
+    UITextField *billAmountTextField;
+    UITextField *tipPercentageTextField;
+    UITextField *splitTextField;
+    UILabel *totalBillAmountLabel;
+}
 
+- (NSString*) calculateTip;
 @end

@@ -20,6 +20,9 @@
     // Override point for customization after application launch.
      
     self.window.rootViewController = self.viewController;
+    UIColor *background = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
+    [self.window setBackgroundColor:background];
+    [background release];
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -13,9 +13,7 @@
 		03729197143D5B5100704670 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03729195143D5B5100704670 /* InfoPlist.strings */; };
 		03729199143D5B5100704670 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03729198143D5B5100704670 /* main.m */; };
 		0372919D143D5B5100704670 /* TipCalculatorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0372919C143D5B5100704670 /* TipCalculatorAppDelegate.m */; };
-		037291A0143D5B5100704670 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0372919E143D5B5100704670 /* MainWindow.xib */; };
 		037291A3143D5B5100704670 /* TipCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 037291A2143D5B5100704670 /* TipCalculatorViewController.m */; };
-		037291A6143D5B5100704670 /* TipCalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 037291A4143D5B5100704670 /* TipCalculatorViewController.xib */; };
 		037291AE143D5B5100704670 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037291AD143D5B5100704670 /* SenTestingKit.framework */; };
 		037291AF143D5B5100704670 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0372918C143D5B5100704670 /* UIKit.framework */; };
 		037291B0143D5B5100704670 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0372918E143D5B5100704670 /* Foundation.framework */; };
@@ -23,6 +21,8 @@
 		037291B9143D5B5200704670 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 037291B7143D5B5200704670 /* InfoPlist.strings */; };
 		037291BB143D5B5200704670 /* TipCalculatorTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 037291BA143D5B5200704670 /* TipCalculatorTests.h */; };
 		037291BD143D5B5200704670 /* TipCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 037291BC143D5B5200704670 /* TipCalculatorTests.m */; };
+		037291C7143DCBD200704670 /* mockup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 037291C6143DCBD200704670 /* mockup.xib */; };
+		037291C9143E948D00704670 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 037291C8143E948D00704670 /* background.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,22 +40,22 @@
 		0372918C143D5B5100704670 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0372918E143D5B5100704670 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		03729190143D5B5100704670 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		03729194143D5B5100704670 /* TipCalculator-Info.plist */ = {isa = PBXFileReference; path = "TipCalculator-Info.plist"; sourceTree = "<group>"; };
+		03729194143D5B5100704670 /* TipCalculator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TipCalculator-Info.plist"; sourceTree = "<group>"; };
 		03729196143D5B5100704670 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		03729198143D5B5100704670 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0372919A143D5B5100704670 /* TipCalculator-Prefix.pch */ = {isa = PBXFileReference; path = "TipCalculator-Prefix.pch"; sourceTree = "<group>"; };
-		0372919B143D5B5100704670 /* TipCalculatorAppDelegate.h */ = {isa = PBXFileReference; path = TipCalculatorAppDelegate.h; sourceTree = "<group>"; };
+		0372919A143D5B5100704670 /* TipCalculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TipCalculator-Prefix.pch"; sourceTree = "<group>"; };
+		0372919B143D5B5100704670 /* TipCalculatorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipCalculatorAppDelegate.h; sourceTree = "<group>"; };
 		0372919C143D5B5100704670 /* TipCalculatorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipCalculatorAppDelegate.m; sourceTree = "<group>"; };
-		0372919F143D5B5100704670 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		037291A1143D5B5100704670 /* TipCalculatorViewController.h */ = {isa = PBXFileReference; path = TipCalculatorViewController.h; sourceTree = "<group>"; };
+		037291A1143D5B5100704670 /* TipCalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipCalculatorViewController.h; sourceTree = "<group>"; };
 		037291A2143D5B5100704670 /* TipCalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipCalculatorViewController.m; sourceTree = "<group>"; };
-		037291A5143D5B5100704670 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TipCalculatorViewController.xib; sourceTree = "<group>"; };
 		037291AC143D5B5100704670 /* TipCalculatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalculatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		037291AD143D5B5100704670 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		037291B6143D5B5100704670 /* TipCalculatorTests-Info.plist */ = {isa = PBXFileReference; path = "TipCalculatorTests-Info.plist"; sourceTree = "<group>"; };
+		037291B6143D5B5100704670 /* TipCalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TipCalculatorTests-Info.plist"; sourceTree = "<group>"; };
 		037291B8143D5B5200704670 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		037291BA143D5B5200704670 /* TipCalculatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipCalculatorTests.h; sourceTree = "<group>"; };
 		037291BC143D5B5200704670 /* TipCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipCalculatorTests.m; sourceTree = "<group>"; };
+		037291C6143DCBD200704670 /* mockup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mockup.xib; sourceTree = "<group>"; };
+		037291C8143E948D00704670 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,12 +116,12 @@
 		03729192143D5B5100704670 /* TipCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				037291C8143E948D00704670 /* background.jpg */,
 				0372919B143D5B5100704670 /* TipCalculatorAppDelegate.h */,
 				0372919C143D5B5100704670 /* TipCalculatorAppDelegate.m */,
-				0372919E143D5B5100704670 /* MainWindow.xib */,
 				037291A1143D5B5100704670 /* TipCalculatorViewController.h */,
 				037291A2143D5B5100704670 /* TipCalculatorViewController.m */,
-				037291A4143D5B5100704670 /* TipCalculatorViewController.xib */,
+				037291C6143DCBD200704670 /* mockup.xib */,
 				03729193143D5B5100704670 /* Supporting Files */,
 			);
 			path = TipCalculator;
@@ -225,8 +225,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				03729197143D5B5100704670 /* InfoPlist.strings in Resources */,
-				037291A0143D5B5100704670 /* MainWindow.xib in Resources */,
-				037291A6143D5B5100704670 /* TipCalculatorViewController.xib in Resources */,
+				037291C7143DCBD200704670 /* mockup.xib in Resources */,
+				037291C9143E948D00704670 /* background.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,22 +293,6 @@
 				03729196143D5B5100704670 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		0372919E143D5B5100704670 /* MainWindow.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0372919F143D5B5100704670 /* en */,
-			);
-			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		037291A4143D5B5100704670 /* TipCalculatorViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				037291A5143D5B5100704670 /* en */,
-			);
-			name = TipCalculatorViewController.xib;
 			sourceTree = "<group>";
 		};
 		037291B7143D5B5200704670 /* InfoPlist.strings */ = {
@@ -440,6 +424,7 @@
 				037291C2143D5B5200704670 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		037291C3143D5B5200704670 /* Build configuration list for PBXNativeTarget "TipCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +433,7 @@
 				037291C5143D5B5200704670 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
