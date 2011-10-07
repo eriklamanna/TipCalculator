@@ -16,5 +16,5 @@
     UILabel *totalBillAmountLabel;
 }
 
-- (NSString*) calculateTip;
+- (void) calculateTip;
 @end

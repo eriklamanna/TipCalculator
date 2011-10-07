@@ -85,7 +85,7 @@
     [totalLabel release];
     
     totalBillAmountLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(totalLabel.frame), totalLabel.frame.origin.y, 100, 21)];
-    [totalBillAmountLabel setText:[self calculateTip]];
+    [self calculateTip];
     [totalBillAmountLabel setBackgroundColor:[UIColor clearColor]];
     [totalBillAmountLabel setTextColor:[UIColor whiteColor]];
     [mainScrollView addSubview:totalBillAmountLabel];
@@ -102,6 +102,9 @@
     
     // Release view resources
     [billAmountTextField release];
+    [tipPercentageTextField release];
+    [splitTextField release];
+    [totalBillAmountLabel release];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -110,8 +113,10 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (NSString *) calculateTip
+- (void) calculateTip
 {
-    return @"25";
+    float amount = [billAmountTextField.text floatValue];
+    float percent = [tipPercentageTextField.text intValue] / 100.0;
+    [totalBillAmountLabel setText:[NSString stringWithFormat:@"$%.02f", (amount + (amount*percent))]];
 }
 @end

@@ -21,7 +21,6 @@
 		037291B9143D5B5200704670 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 037291B7143D5B5200704670 /* InfoPlist.strings */; };
 		037291BB143D5B5200704670 /* TipCalculatorTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 037291BA143D5B5200704670 /* TipCalculatorTests.h */; };
 		037291BD143D5B5200704670 /* TipCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 037291BC143D5B5200704670 /* TipCalculatorTests.m */; };
-		037291C7143DCBD200704670 /* mockup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 037291C6143DCBD200704670 /* mockup.xib */; };
 		037291C9143E948D00704670 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 037291C8143E948D00704670 /* background.jpg */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +53,6 @@
 		037291B8143D5B5200704670 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		037291BA143D5B5200704670 /* TipCalculatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipCalculatorTests.h; sourceTree = "<group>"; };
 		037291BC143D5B5200704670 /* TipCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipCalculatorTests.m; sourceTree = "<group>"; };
-		037291C6143DCBD200704670 /* mockup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mockup.xib; sourceTree = "<group>"; };
 		037291C8143E948D00704670 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,7 +119,6 @@
 				0372919C143D5B5100704670 /* TipCalculatorAppDelegate.m */,
 				037291A1143D5B5100704670 /* TipCalculatorViewController.h */,
 				037291A2143D5B5100704670 /* TipCalculatorViewController.m */,
-				037291C6143DCBD200704670 /* mockup.xib */,
 				03729193143D5B5100704670 /* Supporting Files */,
 			);
 			path = TipCalculator;
@@ -225,7 +222,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				03729197143D5B5100704670 /* InfoPlist.strings in Resources */,
-				037291C7143DCBD200704670 /* mockup.xib in Resources */,
 				037291C9143E948D00704670 /* background.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
