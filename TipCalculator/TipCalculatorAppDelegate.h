@@ -11,6 +11,10 @@
 @class TipCalculatorViewController;
 
 @interface TipCalculatorAppDelegate : NSObject <UIApplicationDelegate>
+{
+    UIWindow *_window;
+    TipCalculatorViewController *_viewController;
+}
 
 @property (nonatomic, retain) UIWindow *window;
 

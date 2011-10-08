@@ -12,14 +12,14 @@
 
 @implementation TipCalculatorAppDelegate
 
-@synthesize window;
-@synthesize viewController;
+@synthesize window = _window;
+@synthesize viewController = _viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.viewController = [[TipCalculatorViewController alloc] initWithNibName:nil bundle:nil];
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    _viewController = [[TipCalculatorViewController alloc] initWithNibName:nil bundle:nil];
     self.window.rootViewController = self.viewController;
     UIColor *background = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
     [self.window setBackgroundColor:background];
