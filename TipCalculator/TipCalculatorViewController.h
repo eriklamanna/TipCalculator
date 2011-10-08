@@ -11,6 +11,7 @@
 @interface TipCalculatorViewController : UIViewController <UITextFieldDelegate>
 {
     UITextField *billAmountTextField;
+    UISegmentedControl *tipSegmentedControl;
     UITextField *tipPercentageTextField;
     UITextField *splitTextField;
     UILabel *totalBillAmountLabel;
