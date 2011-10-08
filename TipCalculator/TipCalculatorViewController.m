@@ -10,12 +10,20 @@
 
 @implementation TipCalculatorViewController
 
+- (void) dealloc
+{
+    [billAmountTextField release];
+    [tipPercentageTextField release];
+    [splitTextField release];
+    [totalBillAmountLabel release];
+    
+    [super dealloc];
+}
+
 - (void)didReceiveMemoryWarning
 {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
 }
 
 #pragma mark - View lifecycle
@@ -40,7 +48,7 @@
     
     [billAmountTextField setPlaceholder:@"15.00"];
     billAmountTextField.borderStyle = UITextBorderStyleNone;
-    [billAmountTextField setKeyboardType:UIKeyboardTypeDecimalPad];
+    [billAmountTextField setKeyboardType:UIKeyboardTypeNumbersAndPunctuation];
     [billAmountTextField setTextColor:[UIColor lightTextColor]];
     [billAmountTextField setBackgroundColor:[UIColor colorWithWhite:0.5 alpha:0.5]];
     [billAmountTextField setDelegate:self];
@@ -101,13 +109,13 @@
 
 - (void)viewDidUnload
 {
-    [super viewDidUnload];
-    
     // Release view resources
     [billAmountTextField release];
     [tipPercentageTextField release];
     [splitTextField release];
     [totalBillAmountLabel release];
+    
+    [super viewDidUnload];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -117,6 +125,13 @@
 }
 
 - (BOOL)textFieldShouldEndEditing:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    [self calculateTip];
+    return YES;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
     [self calculateTip];
