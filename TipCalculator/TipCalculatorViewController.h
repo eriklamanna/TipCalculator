@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TipCalculatorViewController : UIViewController
+@interface TipCalculatorViewController : UIViewController <UITextFieldDelegate>
 {
     UITextField *billAmountTextField;
     UITextField *tipPercentageTextField;

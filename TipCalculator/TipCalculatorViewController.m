@@ -43,6 +43,7 @@
     [billAmountTextField setKeyboardType:UIKeyboardTypeDecimalPad];
     [billAmountTextField setTextColor:[UIColor lightTextColor]];
     [billAmountTextField setBackgroundColor:[UIColor colorWithWhite:0.5 alpha:0.5]];
+    [billAmountTextField setDelegate:self];
     [mainScrollView addSubview:billAmountTextField];
     
     UILabel *tipPercentageLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, CGRectGetMaxY(billAmountTextField.frame) + 10, 100, 21)];
@@ -59,6 +60,7 @@
     [tipPercentageTextField setKeyboardType:UIKeyboardTypeDecimalPad];
     [tipPercentageTextField setTextColor:[UIColor lightTextColor]];
     [tipPercentageTextField setBackgroundColor:[UIColor colorWithWhite:0.5 alpha:0.5]];
+    [tipPercentageTextField setDelegate:self];
     [mainScrollView addSubview:tipPercentageTextField];
 
     UILabel *splitLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, CGRectGetMaxY(tipPercentageLabel.frame) + 10, 100, 21)];
@@ -75,6 +77,7 @@
     [splitTextField setKeyboardType:UIKeyboardTypeDecimalPad];
     [splitTextField setTextColor:[UIColor lightTextColor]];
     [splitTextField setBackgroundColor:[UIColor colorWithWhite:0.5 alpha:0.5]];
+    [splitTextField setDelegate:self];
     [mainScrollView addSubview:splitTextField];
 
     UILabel *totalLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, CGRectGetMaxY(splitLabel.frame) + 20, 100, 21)];
@@ -111,6 +114,13 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (BOOL)textFieldShouldEndEditing:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    [self calculateTip];
+    return YES;
 }
 
 - (void) calculateTip
