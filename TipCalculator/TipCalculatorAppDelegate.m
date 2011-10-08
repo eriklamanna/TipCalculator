@@ -69,8 +69,9 @@
 
 - (void)dealloc
 {
-    [self.window release];
-    [self.viewController release];
+    self.window = nil;
+    self.viewController = nil;
+    
     [super dealloc];
 }
 
