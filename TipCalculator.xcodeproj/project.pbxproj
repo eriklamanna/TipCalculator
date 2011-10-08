@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030E45E91440B74B001D21A0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 030E45E81440B74B001D21A0 /* icon.png */; };
 		0372918D143D5B5100704670 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0372918C143D5B5100704670 /* UIKit.framework */; };
 		0372918F143D5B5100704670 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0372918E143D5B5100704670 /* Foundation.framework */; };
 		03729191143D5B5100704670 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03729190143D5B5100704670 /* CoreGraphics.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		030E45E81440B74B001D21A0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		03729188143D5B5100704670 /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0372918C143D5B5100704670 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0372918E143D5B5100704670 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -84,6 +86,7 @@
 		0372917D143D5B5000704670 = {
 			isa = PBXGroup;
 			children = (
+				030E45E81440B74B001D21A0 /* icon.png */,
 				03729192143D5B5100704670 /* TipCalculator */,
 				037291B4143D5B5100704670 /* TipCalculatorTests */,
 				0372918B143D5B5100704670 /* Frameworks */,
@@ -223,6 +226,7 @@
 			files = (
 				03729197143D5B5100704670 /* InfoPlist.strings in Resources */,
 				037291C9143E948D00704670 /* background.jpg in Resources */,
+				030E45E91440B74B001D21A0 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
